@@ -10,7 +10,19 @@ body{
 }
 
 
+main{
+    padding-top: 3em;
+}
+.navbar-collapse{
+    background-color: #000;
+}
+.navbar-toggler{
+    border: none!important;
+}
 
+.navbar-toggler:focus{
+    box-shadow: none!important;
+}
 
 
 
