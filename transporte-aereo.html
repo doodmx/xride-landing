@@ -7,22 +7,188 @@
     <script defer src="node_modules/swup/dist/swup.min.js"></script>
     <script defer src="/script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Inicio | Xride </title>
+    
+    <title>Transporte Ejecutivo | Xride </title>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/transporte-ejecutivo.html">Transporte ejecutivo</a></li>
-            <li><a href="/transporte-aereo.html">Transporte aéreo</a></li>
-            <li><a href="/transporte-industrial.html">Transporte industrial</a></li>
-            <li><a href="/contacto.html">Contacto</a></li>
-        </ul>
+<body style="background-color: #000;">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/index.html">
+            <img src="/Images/Index/Icono.svg" class="logo_xride" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggled" aria-controls="navbarToggled" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggled">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="/transporte-ejecutivo.html">Transporte ejecutivo</a></li>
+                <li class="nav-item"><a class="nav-link" href="/transporte-aereo.html">Transporte aéreo</a></li>
+                <li class="nav-item"><a class="nav-link" href="/transporte-industrial.html">Transporte industrial</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        
     </nav>
 
+
+
     <main id="swup" class="transition-fade">
-        <h1>Esta es transporte aéreo</h1>
+
+        <div class="cover_aereo">
+
+            <div class="col_transporte">
+
+                <div class="col_content col_content_transporte margin-center">
+                    <div>
+                        <h2 class="white" style="text-align: end;">Transporte<br>aéreo</h2>
+                        <p class="parr-small white text-end">Nombre de avión</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="white transition-diagonal-tb" style="padding-bottom: 2em;">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt
+                             ut labore et dolore magna aliqua. Ut enim ad minim
+                              veniam, quis nostrud exercitation ullamco laboris
+                               nisi ut aliquip ex ea commodo consequat.</p>
+
+                        <div class="section_white_transporte">
+                            <form action="https://formsubmit.co/" method="POST" class="form_mobile evenly-all"
+                             name="formAereo" id="formAereo" style=" width:100%;">
+                                <!-- Honeypot --> 
+                                <!-- <input type="text" name="_honey" style="display: none;"> -->
+                                <!--Quitar captcha-->
+                                <!-- <input type="hidden" name="_captcha" value="false"> -->
+                                <!-- Página de agradecimiento-->
+                                <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html"> -->
+            
+                                <div class="user-box center-all" style="padding-bottom: 2em;">
+                                    <div class="content center-all">
+                                        <input class="no-border" type="text" name="origenAereo" id="origenAereo"  maxlength="60" placeholder="Origen (ciudad)" required/>
+                                        <!-- <label>Email*</label> -->
+                                    </div>
+                                </div>
+                                <div class="user-box center-all" style="padding-bottom: 2em;">
+                                    <div class="content center-all">
+                                        <input type="text" name="destinoAereo" id="destinoAereo"  maxlength="24" placeholder="Destino (ciudad)" required/>
+                                        <!-- <label>Contraseña*</label> -->
+                                    </div>
+                                </div>
+                                <div class="user-box center-all" style="padding-bottom: 2em;">
+                                    <div class="content center-all">
+                                        <input type="time" name="horaAereo" id="horaAvion"  maxlength="24" placeholder="Hora" required/>
+                                        <!-- <label>Contraseña*</label> -->
+                                    </div>
+                                </div>
+                                <div class="user-box center-all" style="padding-bottom: 2em;">
+                                    <div class="content center-all">
+                                        <input type="date" name="fechaAereo" id="fechaAereo"  maxlength="24" placeholder="Fecha" required/>
+                                        <!-- <label>Contraseña*</label> -->
+                                    </div>
+                                </div>
+                                <div class="user-box center-all" style="padding-bottom: 2em;">
+                                    <div class="content center-all">
+                                        <input type="password" name="Contrasena" id="passwordMobile"  maxlength="24" placeholder="Modelo" required/>
+                                        <!-- <label>Contraseña*</label> -->
+                                    </div>
+                                </div>
+                                <div style="text-align:center;">
+                                    <div class="btn-enviar-div">
+                                        <input type="submit" class="mx-auto submit submit_index btn-enviar-card-form" id="btn-enviar-mobile" value="Iniciar Sesión">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+        
+                        <button class="btn_black" id="btn_info_aereo">Más info</button>
+                    </div>
+                    
+    
+                    
+                </div>
+                
+
+            </div>
+           
+        </div>
+
+        
+        
 
     </main>
+
+    <!--Sección de footer-->
+    <section class="footer footer-black footer-section">
+        <div class="row footer-row" style="width: 88%">
+            <div class="col-12 col-md-2 footer-col">
+                <h3 class="gray text-center">Inicio</h3>
+                <ul class="footer-ul">
+
+                </ul>
+            </div>
+            <div class="col-12 col-md-2 footer-col">
+                <h3 class="h3-black">Transporte ejecutivo</h3>
+                <ul class="footer-ul">
+                    <li>
+                        <a class="p section-link" href="index.html">Información</a>
+                    </li>
+                    <li>
+                        <a class="p section-link" href="index.html">Solicitar</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2 footer-col">
+                <h3 class="h3-black">Transporte aéreo</h3>
+                <ul class="footer-ul">
+                    <li>
+                        <a class="p section-link" href="index.html">Información</a>
+                    </li>
+                    <li>
+                        <a class="p section-link" href="solicitud.html">Solicitar</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2 footer-col">
+                <h3 class="h3-black">Transporte Industrial</h3>
+                <ul class="footer-ul">
+                    <li>
+                        <a class="p section-link" href="index.html">Información</a>
+                    </li>
+                    <li>
+                        <a class="p section-link" href="solicitud.html">Solicitar</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2 footer-col">
+                <h3 class="h3-black">Contacto</h3>
+                <ul class="footer-ul">
+                    
+                </ul>
+            </div>
+            <div class="col-12 col-md-2 footer-col" style="">
+                <h3 class="h3-black">Redes</h3>
+                <a style="padding-right: 1em;" href="https://mail.google.com/mail/?view=cm&fs=1&to=info@urbk.mx&su=Consulta URBK&body=&bcc="> <img src="Images/Index/Icon awesome-facebook.svg" alt="facebook"></a>
+                <a style="padding-right: 1em;" href="https://www.instagram.com/urbk.financialgroup/"> <img src="Images/Index/Icon ionic-logo-instagram.svg" alt="instagram"></a>
+                <a href="https://www.facebook.com/UrbkFinancialGroup"><img src="Images/Index/Icon awesome-linkedin.svg" alt="linkedin"></a>
+            </div>
+
+        </div>
+    </section>
+
+
 </body>
+
+   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+crossorigin="anonymous"
+/>
+
 </html>
