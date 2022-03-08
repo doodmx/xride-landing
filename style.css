@@ -4,7 +4,88 @@ body{
     padding-top: 2em;
 }
 
+#col_transporte_ejecutivo{
+    background-image: url('Images/Index/detail-shot-of-modern-black-premium-car-2021-08-30-07-46-14-utc.png');
+    
+}
+#col_transporte_aereo{
+    background-image: url('Images/Index/shutterstock_428597851@2x.png'); 
+}
+#col_transporte_industrial{
+    background-image: url('Images/Index/semi-truck-wheels-2021-08-26-23-04-30-utc@2x.png');
+}
 
+.col_index{
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.cover_index{
+    background-image: url('Images/Index/');
+    min-height: 80vh;
+}
+
+.footer{
+    color: #B8C1D1;
+    padding: 6em 0 8em 0;
+}
+
+.footer-col{
+    width: 12.5vw;
+    /* padding: 0; */
+  }
+  .footer-row{
+    padding-top: 1em;
+  }
+  .footer-section{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 1rem;
+  }
+  .footer-ul a{
+      text-decoration: none;
+      color: #B8C1D1;
+  }
+  .footer-white{
+    padding-bottom: 1em;
+    /* min-height: 13em; */
+    background-color: #FFFFFF;
+  }
+
+.gray{
+    color: #B8C1D1;
+}
+
+h3, .h3{
+    font-size: 25px!important;
+    font-family: 'Weissenhof_Grotesk_Regular';
+}
+.link{
+    text-decoration: none;
+}
+
+.link_card{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.link_card_ejecutivo, .link_card_industrial{
+    justify-content: end;
+}
+.link_card_aereo{
+    align-items: end;
+}
+
+.logo_index{
+    width: 265px;
+    height: auto;
+}
 .logo_xride{
     padding-left: 1.5em;
 }
@@ -24,7 +105,23 @@ main{
     box-shadow: none!important;
 }
 
+p, .p{
+    font-size: 16px;
+    font-family: 'Weissenhof_Grotesk_Light';
+}
 
+.parr_cover_index{
+    max-width: 341px;
+}
+
+.row_index{
+    min-height: 390px;
+}
+
+.text-center{
+    text-align: center;
+    
+}
 
 
 /* Transitions */
@@ -55,5 +152,70 @@ html.is-leaving .transition-fade{
 
 html.is-animating .transition-swipe{
     transform: translateY(100px);
+}
+
+.white{
+    color: #EDF1F9;
+}
+
+/*----------------------Bigger than SM---------------------*/
+@media (min-width:768px){
+    .logo_index{
+        padding-top: 6em;
+        padding-bottom: 12em;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .parr_cover_index{
+        padding-left: 5em;
+    }
+
+}
+
+/*----------------------Mobiles---------------------*/
+
+@media (max-width:768px) and (max-height:1024px) {
+
+    .col_index{
+        min-height: 50vh;
+    }
+    .cover_index{
+        height: 76vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-col{
+        padding-bottom: 1em;
+    }
+}
+
+
+/*Fonts*/
+@font-face {
+    font-family: 'Weissenhof_Grotesk_Light';
+    /* font-weight: bold; */
+    src: url("Fonts/Indian\ Type\ Foundry\ -\ WeissenhofGrotesk-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Weissenhof_Grotesk_Regular';
+    /* font-weight: bold; */
+    src: url("Fonts/Indian\ Type\ Foundry\ -\ WeissenhofGrotesk-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Gotham_Bold';
+    /* font-weight: bold; */
+    src: url("Fonts/Gotham-Bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: 'Ubuntu_Light';
+	font-weight: bold;
+	src: url("Fonts/Ubuntu-Light.ttf") format("opentype");
 }
 
