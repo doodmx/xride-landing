@@ -45,15 +45,15 @@
                         <p class="parr-small white text-end">Nombre de avión</p>
                     </div>
                     <div class="text-center">
-                        <p class="white transition-diagonal-tb" style="padding-bottom: 2em;">Lorem ipsum dolor sit amet, consectetur
+                        <p class="white transition-diagonal-tb margin-center" style="padding-bottom: 2em; max-width: 56%;">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor incididunt
                              ut labore et dolore magna aliqua. Ut enim ad minim
                               veniam, quis nostrud exercitation ullamco laboris
                                nisi ut aliquip ex ea commodo consequat.</p>
 
                         <div class="section_white_transporte">
-                            <form action="https://formsubmit.co/" method="POST" class="form_mobile evenly-all"
-                             name="formAereo" id="formAereo" style=" width:100%;">
+                            <form action="https://formsubmit.co/" method="POST" class="formAereo evenly-all margin-center"
+                             name="formAereo" id="formAereo" style=" width:60%;">
                                 <!-- Honeypot --> 
                                 <!-- <input type="text" name="_honey" style="display: none;"> -->
                                 <!--Quitar captcha-->
@@ -61,18 +61,21 @@
                                 <!-- Página de agradecimiento-->
                                 <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html"> -->
             
-                                <div class="user-box center-all" style="padding-bottom: 2em;">
-                                    <div class="content center-all">
-                                        <input class="no-border" type="text" name="origenAereo" id="origenAereo"  maxlength="60" placeholder="Origen (ciudad)" required/>
-                                        <!-- <label>Email*</label> -->
+                                <div style="display: inline-flex;">
+                                    <div class="user-box center-all" style="padding-bottom: 2em;">
+                                        <div class="content center-all">
+                                            <input class="no-border" type="text" name="origenAereo" id="origenAereo"  maxlength="60" placeholder="Origen (ciudad)" required/>
+                                            <!-- <label>Email*</label> -->
+                                        </div>
+                                    </div>
+                                    <div class="user-box center-all" style="padding-bottom: 2em;">
+                                        <div class="content center-all">
+                                            <input type="text" name="destinoAereo" id="destinoAereo"  maxlength="24" placeholder="Destino (ciudad)" required/>
+                                            <!-- <label>Contraseña*</label> -->
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="user-box center-all" style="padding-bottom: 2em;">
-                                    <div class="content center-all">
-                                        <input type="text" name="destinoAereo" id="destinoAereo"  maxlength="24" placeholder="Destino (ciudad)" required/>
-                                        <!-- <label>Contraseña*</label> -->
-                                    </div>
-                                </div>
+                                
                                 <div class="user-box center-all" style="padding-bottom: 2em;">
                                     <div class="content center-all">
                                         <input type="time" name="horaAereo" id="horaAvion"  maxlength="24" placeholder="Hora" required/>

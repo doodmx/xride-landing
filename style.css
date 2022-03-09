@@ -16,7 +16,7 @@ body{
 }
 
 .col_content_transporte{
-    max-width: 56%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -98,6 +98,16 @@ body{
     background-color: #FFFFFF;
   }
 
+.formAereo .user-box input{
+    background-color: rgba(0,0,0,0.59);
+    border: none;
+    color: #fff;
+    height: 29px;
+}
+.formAereo .user-box input::placeholder{
+    color: #fff;
+}
+
 .gray{
     color: #B8C1D1;
 }
@@ -162,7 +172,9 @@ main{
 .navbar-toggler:focus{
     box-shadow: none!important;
 }
-
+.no-border{
+    border: none;
+}
 p, .p{
     font-size: 16px;
     font-family: 'Weissenhof_Grotesk_Light';
