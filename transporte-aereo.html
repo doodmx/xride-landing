@@ -41,7 +41,7 @@
 
                 <div class="col_content col_content_transporte margin-center">
                     <div>
-                        <h2 class="white" style="text-align: end;">Transporte<br>aéreo</h2>
+                        <h2 class="white" style="text-align: end; padding-top: 2em;">Transporte<br>aéreo</h2>
                         <p class="parr-small white text-end">Nombre de avión</p>
                     </div>
                     <div class="text-center">
@@ -51,62 +51,102 @@
                               veniam, quis nostrud exercitation ullamco laboris
                                nisi ut aliquip ex ea commodo consequat.</p>
 
-                        <div class="section_white_transporte">
+                        <div class="section_white_transporte hidden">
                             <form action="https://formsubmit.co/" method="POST" class="formAereo evenly-all margin-center"
-                             name="formAereo" id="formAereo" style=" width:60%;">
+                                  name="formAereo" id="formAereo" style=" width:67%;">
                                 <!-- Honeypot --> 
                                 <!-- <input type="text" name="_honey" style="display: none;"> -->
                                 <!--Quitar captcha-->
                                 <!-- <input type="hidden" name="_captcha" value="false"> -->
                                 <!-- Página de agradecimiento-->
                                 <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html"> -->
-            
-                                <div style="display: inline-flex;">
-                                    <div class="user-box center-all" style="padding-bottom: 2em;">
-                                        <div class="content center-all">
-                                            <input class="no-border" type="text" name="origenAereo" id="origenAereo"  maxlength="60" placeholder="Origen (ciudad)" required/>
-                                            <!-- <label>Email*</label> -->
+
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="user-box center-all" style="padding-bottom: 1em;">
+                                                <div class="content center-all">
+                                                    <input class="no-border" type="text" name="origenAereo" id="origenAereo"  maxlength="60" placeholder="Origen (ciudad)" required/>
+                                                    <!-- <label>Email*</label> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="user-box center-all" style="padding-bottom: 1em;">
+                                                <div class="content center-all">
+                                                    <input type="text" name="destinoAereo" id="destinoAereo"  maxlength="24" placeholder="Destino (ciudad)" required/>
+                                                    <!-- <label>Contraseña*</label> -->
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="user-box center-all" style="padding-bottom: 2em;">
-                                        <div class="content center-all">
-                                            <input type="text" name="destinoAereo" id="destinoAereo"  maxlength="24" placeholder="Destino (ciudad)" required/>
-                                            <!-- <label>Contraseña*</label> -->
+                                </div>
+
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-5">
+                                            <div class="user-box center-all" style="padding-bottom: 1em;">
+                                                <div class="content center-all">
+                                                    <input type="time" name="horaAereo" id="horaAvion"  maxlength="24" placeholder="Hora" required/>
+                                                    <!-- <label>Contraseña*</label> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-7">
+                                            <div class="user-box center-all" style="padding-bottom: 1em;">
+                                                <div class="content center-all">
+                                                    <input type="date" name="fechaAereo" id="fechaAereo"  maxlength="24" placeholder="Fecha" required/>
+                                                    <!-- <label>Contraseña*</label> -->
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <div class="user-box center-all" style="padding-bottom: 2em;">
-                                    <div class="content center-all">
-                                        <input type="time" name="horaAereo" id="horaAvion"  maxlength="24" placeholder="Hora" required/>
-                                        <!-- <label>Contraseña*</label> -->
+
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-7">
+                                            <div class="user-box center-all" style="padding-bottom: 1em;">
+                                                <div class="content center-all">
+                                                    <select name="modeloAereo" id="modeloAereo" required>
+                                                        <option value="Modelo1">Modelo 1</option>
+                                                        <option value="Modelo1">Modelo 1</option>
+                                                        <option value="Modelo1">Modelo 1</option>
+                                                        <option value="Modelo1">Modelo 1</option>
+                                                    </select>
+                                                    <!-- <label>Contraseña*</label> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-5" style="padding-left: 0;">
+                                            <div style="display: flex; padding-top: 0.4em;">
+                                                <p class="parr_small gray no-margins" style="padding-right: 0.3em;">Duración: </p>
+                                                <p class="parr_small light-gray no-margins">Predefinido</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="user-box center-all" style="padding-bottom: 2em;">
-                                    <div class="content center-all">
-                                        <input type="date" name="fechaAereo" id="fechaAereo"  maxlength="24" placeholder="Fecha" required/>
-                                        <!-- <label>Contraseña*</label> -->
+
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div style="display: flex; padding-top: 0.4em;">
+                                                <p class="parr_small gray no-margins" style="padding-right: 0.3em;">Costo: </p>
+                                                <p class="parr_small light-gray no-margins">calcular</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="user-box center-all" style="padding-bottom: 2em;">
-                                    <div class="content center-all">
-                                        <input type="password" name="Contrasena" id="passwordMobile"  maxlength="24" placeholder="Modelo" required/>
-                                        <!-- <label>Contraseña*</label> -->
-                                    </div>
-                                </div>
-                                <div style="text-align:center;">
-                                    <div class="btn-enviar-div">
-                                        <input type="submit" class="mx-auto submit submit_index btn-enviar-card-form" id="btn-enviar-mobile" value="Iniciar Sesión">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
+
                             </form>
                         </div>
         
-                        <button class="btn_black" id="btn_info_aereo">Más info</button>
+                        <button class="btn_black" id="btn_info_aereo" onclick="showFormAereo()">Más info</button>
+                        <button class="btn_black hidden" id="btn_solicitar_aereo" form="formAereo">
+                            Solicitar  X R I D E
+                        </button>
+
+
                     </div>
                     
     

@@ -32,6 +32,7 @@ body{
     /* background: #FFFFFF 0% 0% no-repeat padding-box; */
     align-self: flex-end;
     min-height: inherit;
+    max-height: -webkit-fill-available;
 }
 
 #col_transporte_ejecutivo{
@@ -98,14 +99,29 @@ body{
     background-color: #FFFFFF;
   }
 
-.formAereo .user-box input{
+.formAereo{
+    padding: 2em 0 2em 0;
+}
+
+.formAereo .user-box input,select{
     background-color: rgba(0,0,0,0.59);
     border: none;
     color: #fff;
     height: 29px;
+    width: 100%;
+    font-size: 12px!important;
+    font-family: 'Weissenhof_Grotesk_Regular'!important;
+    padding-left: 0.7em;
 }
 .formAereo .user-box input::placeholder{
     color: #fff;
+    font-size: 12px;
+    font-family: 'Weissenhof_Grotesk_Regular';
+}
+.formAereo .user-box select::placeholder{
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Weissenhof_Grotesk_Regular';
 }
 
 .gray{
@@ -122,11 +138,18 @@ h3, .h3{
     font-family: 'Weissenhof_Grotesk_Regular';
 }
 
+.hidden{
+    display: none;
+}
+
 .evenly-all{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+.light-gray{
+    color: #D6DADA;
 }
 .link{
     text-decoration: none;
@@ -156,7 +179,7 @@ h3, .h3{
 
 
 main{
-    padding-top: 3em;
+    /* padding-top: 3em; */
 }
 .margin-center{
     margin-left: auto;
@@ -174,6 +197,9 @@ main{
 }
 .no-border{
     border: none;
+}
+.no-margins{
+    margin: 0;
 }
 p, .p{
     font-size: 16px;
@@ -196,6 +222,7 @@ p, .p{
 .section_white_transporte{
     width: 100%;
     background-color: #FFFFFF;
+    margin-bottom: 2em;
 
 }
 
@@ -307,7 +334,7 @@ html.is-animating .transition-diagonal-tb{
 @media (max-width:768px) and (max-height:1024px) {
 
     .col_content_transporte{
-        max-width: 65%;
+        max-width: 100%;
     }
     .col_index{
         min-height: 50vh;
