@@ -1,7 +1,9 @@
-
+html{
+    overflow-x: hidden;
+}
 
 body{
-    /* padding-top: 2em; */
+    overflow-x: hidden;/* padding-top: 2em; */
 }
 
 .btn_black{
@@ -15,6 +17,38 @@ body{
     height: 48px;
 }
 
+.btn_back_form_transporte{
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 70%;
+    left: 3%;
+}
+
+.btn_mostrar{
+    background-color: transparent;
+    border: none;
+    align-self: flex-end;
+    align-self: end;
+    align-self: flex-end;
+    align-self: self-end;
+    -webkit-align-self: flex-end;
+    padding-right: 2em;
+}
+
+#btn_solicitar_aereo{
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+.img_back_form_transporte{
+    width: 35px;
+    height: auto;
+}
+
 .col_content_transporte{
     max-width: 100%;
     display: flex;
@@ -22,16 +56,18 @@ body{
     justify-content: space-around;
     align-items: center;
     min-height: inherit;
+    padding-top: 4em;
 }
 
 .col_transporte{
-    max-width: 482px;
+    max-width: 482px!important;
+    min-width: 482px;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     background-color: rgb(162 162 162 / 25%);
     /* background: #FFFFFF 0% 0% no-repeat padding-box; */
     align-self: flex-end;
-    min-height: inherit;
+    min-height: 100vh;
     max-height: -webkit-fill-available;
 }
 
@@ -51,6 +87,10 @@ body{
     background-size: cover;
     background-position: center;
 }
+#col_transporte_lista{
+    overflow-y: scroll;
+    height: 100vh;
+}
 
 .cover_index{
     background-image: url('Images/Index/video_Preview\ 2.mp4');
@@ -59,13 +99,58 @@ body{
     min-height: 80vh;
 }
 
-.cover_aereo{
-    background-image: url('Images/Transporte_Aereo/shutterstock_163665074@2x.png');
+.cover{
     background-position: center;
     background-size: cover;
     min-height: 95vh;
     display: flex;
     justify-content: end;
+}
+.cover_aereo{
+    background-image: url('Images/Transporte_Aereo/shutterstock_163665074@2x.png');
+}
+
+.cover_ejecutivo{
+    background-image: url('Images/Transporte_Ejecutivo/car-rear-lights-with-glossy-surface-red-backlight-2022-01-03-23-19-47-utc@2x.png');
+}
+
+.cover_industrial{
+    background-image: url('Images/');
+}
+
+#descriptionTransporte{
+    max-width: 56%;
+}
+
+.fadein{
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+.fadeout{
+    -webkit-animation: fadeout 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeout 2s; /* Firefox < 16 */
+        -ms-animation: fadeout 2s; /* Internet Explorer */
+         -o-animation: fadeout 2s; /* Opera < 12.1 */
+            animation: fadeout 2s;
+}
+
+.float-down{
+    -webkit-animation: float-down ease-in 0.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: float-down ease-in 0.5s; /* Firefox < 16 */
+        -ms-animation: float-down ease-in 0.5s; /* Internet Explorer */
+         -o-animation: float-down ease-in 0.5s; /* Opera < 12.1 */
+            animation: float-down ease-in 0.5s;
+}
+.float-up{
+    -webkit-animation: float-up ease-in 0.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: float-up ease-in 0.5s; /* Firefox < 16 */
+        -ms-animation: float-up ease-in 0.5s; /* Internet Explorer */
+         -o-animation: float-up ease-in 0.5s; /* Opera < 12.1 */
+            animation: float-up ease-in 0.5s;
 }
 
 .footer{
@@ -148,6 +233,126 @@ h3, .h3{
     justify-content: space-evenly;
     align-items: center;
 }
+
+/*---------------------------Keyframes-----------------------*/
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeout {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeout {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeout {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeout {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes float-up {
+    0% { transform: translate(0, 150px); }
+    100%  { transform: translate(0, 0px); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes float-up {
+    0% { transform: translate(0, 150px); }
+    100%  { transform: translate(0, 0px); }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes float-up {
+    0% { transform: translate(0, 150px); }
+    100%  { transform: translate(0, 0px); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes float-up {
+    0% { transform: translate(0, 150px); }
+    100%  { transform: translate(0, 0px); }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes float-up {
+    0% { transform: translate(0, 0px); }
+    100%  { transform: translate(0, 150px); }
+}
+
+@keyframes float-down {
+    0% { transform: translate(0, 0px); }
+    100%  { transform: translate(0, 250px); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes float-down {
+    0% { transform: translate(0, 0px); }
+    100%  { transform: translate(0, 250px); }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes float-down {
+    0% { transform: translate(0, 0px); }
+    100%  { transform: translate(0, 250px); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes float-down {
+    0% { transform: translate(0, 0px); }
+    100%  { transform: translate(0, 250px); }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes float-down {
+    0% { transform: translate(0, 0px); }
+    100%  { transform: translate(0, 250px); }
+}
+/*----------------------------------------------------------*/
+
+
 .light-gray{
     color: #D6DADA;
 }
@@ -201,6 +406,29 @@ main{
 .no-margins{
     margin: 0;
 }
+.no-padding{
+    padding: 0!important;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    /* full screen */
+    width: 100vw;
+    height: 100vh;
+    /* transparent black */
+    background: rgba(0, 0, 0, 0.7);
+    /* middle layer, i.e. appears below the sidebar */
+    z-index: 998;
+    opacity: 0;
+    /* animate the transition */
+    /* transition: all 0.5s ease-in-out; */
+}
+/* display .overlay when it has the .active class */
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
 p, .p{
     font-size: 16px;
     font-family: 'Weissenhof_Grotesk_Light';
@@ -214,6 +442,10 @@ p, .p{
     font-size: 12px;
 }
 
+.row_cover{
+    z-index: 9999;
+}
+
 .row_index{
     min-height: 390px;
     background-color: #000;
@@ -223,7 +455,7 @@ p, .p{
     width: 100%;
     background-color: #FFFFFF;
     margin-bottom: 2em;
-
+    transition: all 0.5s linear;
 }
 
 .text-center{
@@ -310,6 +542,11 @@ html.is-animating .transition-diagonal-tb{
     transform: translateX(-50%) translateY(-50%);
 }
 
+.visuallyhidden{
+    opacity: 0;
+}
+
+
 .white{
     color: #EDF1F9;
 }
@@ -333,12 +570,27 @@ html.is-animating .transition-diagonal-tb{
 
 @media (max-width:768px) and (max-height:1024px) {
 
+    .btn_back_form_transporte{
+        top: 65%;
+    }
+
+    #btn_solicitar_aereo{
+        margin-bottom: 2em;
+    }
+
     .col_content_transporte{
         max-width: 100%;
+    }
+    .col_content_title_transporte{
+        padding-bottom: 2em;
     }
     .col_index{
         min-height: 50vh;
     }
+    .col_transporte{
+        min-width: 375px;
+    }
+    
     .cover_index{
         height: 95vh;
         text-align: center;
@@ -348,10 +600,17 @@ html.is-animating .transition-diagonal-tb{
         align-items: center;
     }
     .cover_aereo{
-        height: 95vh;
+        /* height: 95vh; */
+    }
+    #descriptionTransporte{
+        max-width: 72%;
     }
     .footer-col{
         padding-bottom: 1em;
+    }
+
+    .logo_index{
+        padding-top: 6em;
     }
 
     .parr_cover_index{
