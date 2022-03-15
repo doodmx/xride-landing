@@ -41,170 +41,174 @@
 
         <div class="cover cover_industrial">
 
-            <div class="col_transporte">
+            <div class="row row_cover" style="align-self:flex-end">
+                <div class="col col_transporte no-padding" id="col_transporte_form">
 
-                <div class="col_content col_content_transporte margin-center">
-                    <button class="p white btn_mostrar hidden" id="btn_mostrar_catalogo">Mostrar catálogo</button>
-                    <div class="col_content_title_transporte">
-                        <h2 class="white" style="text-align: end; padding-top: 2em;">Transporte<br>industrial</h2>
-                        <p class="parr-small white text-end">Nombre de vehículo</p>
-                    </div>
-                    <div class="text-center">
-                        <p class="white transition-diagonal-tb margin-center" id="descriptionTransporte" style="padding-bottom: 2em;">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor incididunt
-                             ut labore et dolore magna aliqua. Ut enim ad minim
-                              veniam, quis nostrud exercitation ullamco laboris
-                               nisi ut aliquip ex ea commodo consequat.</p>
-
-                        <div class="section_white_transporte hidden" id="section_white_transporte">
-
-                            <button class="btn_back_form_transporte" onclick="hideFormAereo()"><img class="img_back_form_transporte" src="Images/General/arrow2.png" alt="atrás"></button>
-
-                            <form action="https://formsubmit.co/" method="POST" class="formAereo evenly-all margin-center"
-                                  name="formIndustrial" id="formIndustrial" style=" width:67%;">
-                                <!-- Honeypot --> 
-                                <!-- <input type="text" name="_honey" style="display: none;"> -->
-                                <!--Quitar captcha-->
-                                <!-- <input type="hidden" name="_captcha" value="false"> -->
-                                <!-- Página de agradecimiento-->
-                                <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html"> -->
-
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-6">
-                                            <div class="user-box center-all" style="padding-bottom: 1em;">
-                                                <div class="content center-all">
-                                                    <input class="no-border" type="text" name="origenIndustrial" id="origenIndustrial"  maxlength="60" placeholder="Origen (ciudad)" required/>
-                                                    <!-- <label>Email*</label> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <div class="user-box center-all" style="padding-bottom: 1em;">
-                                                <div class="content center-all">
-                                                    <input type="text" name="destinoIndustrial" id="destinoIndustrial"  maxlength="24" placeholder="Destino (ciudad)" required/>
-                                                    <!-- <label>Contraseña*</label> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-5">
-                                            <div class="user-box center-all" style="padding-bottom: 1em;">
-                                                <div class="content center-all">
-                                                    <input type="time" name="horaIndustrial" id="horaIndustrial"  maxlength="24" placeholder="Hora" required/>
-                                                    <!-- <label>Contraseña*</label> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-7">
-                                            <div class="user-box center-all" style="padding-bottom: 1em;">
-                                                <div class="content center-all">
-                                                    <input type="date" name="fechaIndustrial" id="fechaIndustrial"  maxlength="24" placeholder="Fecha" required/>
-                                                    <!-- <label>Contraseña*</label> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-7">
-                                            <div class="user-box center-all" style="padding-bottom: 1em;">
-                                                <div class="content center-all">
-                                                    <select name="modeloIndustrial" id="modeloIndustrial" required>
-                                                        <option value="Modelo1">Modelo 1</option>
-                                                        <option value="Modelo1">Modelo 1</option>
-                                                        <option value="Modelo1">Modelo 1</option>
-                                                        <option value="Modelo1">Modelo 1</option>
-                                                    </select>
-                                                    <!-- <label>Contraseña*</label> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-5" style="padding-left: 0;">
-                                            <div style="display: flex; padding-top: 0.4em;">
-                                                <p class="parr_small gray no-margins" style="padding-right: 0.3em;">Duración: </p>
-                                                <p class="parr_small light-gray no-margins">Predefinido</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div style="display: flex; padding-bottom: 1em;">
-                                                <p class="parr_small gray no-margins" style="padding-right: 0.3em;">Costo: </p>
-                                                <p class="parr_small light-gray no-margins">calcular</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-5">
-                                            <div class="user-box center-all" style="padding-bottom: 1em;">
-                                                <div class="content center-all">
-                                                    <input class="no-border" type="text" name="nombreIndustrial" id="nombreIndustrial"  maxlength="60" placeholder="Nombre" required/>
-                                                    <!-- <label>Email*</label> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-7">
-                                            <div class="user-box center-all" style="padding-bottom: 1em;">
-                                                <div class="content center-all">
-                                                    <input type="text" name="apellidoIndustrial" id="apellidoIndustrial"  maxlength="24" placeholder="Apellido" required/>
-                                                    <!-- <label>Contraseña*</label> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-7">
-                                            <div class="user-box center-all" style="padding-bottom: 1em;">
-                                                <div class="content center-all">
-                                                    <input class="no-border" type="tel" name="numeroIndustrial" id="numeroIndustrial"  maxlength="12" minlength="10" placeholder="Número" required/>
-                                                    <!-- <label>Email*</label> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-5">
-                                            <div class="user-box center-all" style="padding-bottom: 1em;">
-                                                <div class="content center-all">
-                                                    <input type="email" name="correoIndustrial" id="correoIndustrial"  maxlength="30" placeholder="Correo" required/>
-                                                    <!-- <label>Contraseña*</label> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </form>
+                    <div class="col_content col_content_transporte margin-center">
+                        <button class="p white btn_mostrar hidden" id="btn_mostrar_catalogo" onclick="toggleModelsCatalogue()">Mostrar catálogo</button>
+                        <div class="col_content_title_transporte">
+                            <h2 class="white" style="text-align: end; padding-top: 2em;">Transporte<br>industrial</h2>
+                            <p class="parr-small white text-end">Nombre de vehículo</p>
                         </div>
+                        <div class="text-center">
+                            <p class="white transition-diagonal-tb margin-center" id="descriptionTransporte" style="padding-bottom: 2em;">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt
+                                 ut labore et dolore magna aliqua. Ut enim ad minim
+                                  veniam, quis nostrud exercitation ullamco laboris
+                                   nisi ut aliquip ex ea commodo consequat.</p>
+    
+                            <div class="section_white_transporte hidden" id="section_white_transporte">
+    
+                                <button class="btn_back_form_transporte" onclick="hideFormAereo()"><img class="img_back_form_transporte" src="Images/General/arrow2.png" alt="atrás"></button>
+    
+                                <form action="https://formsubmit.co/" method="POST" class="formAereo evenly-all margin-center"
+                                      name="formIndustrial" id="formIndustrial" style=" width:67%;">
+                                    <!-- Honeypot --> 
+                                    <!-- <input type="text" name="_honey" style="display: none;"> -->
+                                    <!--Quitar captcha-->
+                                    <!-- <input type="hidden" name="_captcha" value="false"> -->
+                                    <!-- Página de agradecimiento-->
+                                    <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html"> -->
+    
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="user-box center-all" style="padding-bottom: 1em;">
+                                                    <div class="content center-all">
+                                                        <input class="no-border" type="text" name="origenIndustrial" id="origenIndustrial"  maxlength="60" placeholder="Origen (ciudad)" required/>
+                                                        <!-- <label>Email*</label> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="user-box center-all" style="padding-bottom: 1em;">
+                                                    <div class="content center-all">
+                                                        <input type="text" name="destinoIndustrial" id="destinoIndustrial"  maxlength="24" placeholder="Destino (ciudad)" required/>
+                                                        <!-- <label>Contraseña*</label> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-5">
+                                                <div class="user-box center-all" style="padding-bottom: 1em;">
+                                                    <div class="content center-all">
+                                                        <input type="time" name="horaIndustrial" id="horaIndustrial"  maxlength="24" placeholder="Hora" required/>
+                                                        <!-- <label>Contraseña*</label> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-7">
+                                                <div class="user-box center-all" style="padding-bottom: 1em;">
+                                                    <div class="content center-all">
+                                                        <input type="date" name="fechaIndustrial" id="fechaIndustrial"  maxlength="24" placeholder="Fecha" required/>
+                                                        <!-- <label>Contraseña*</label> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-7">
+                                                <div class="user-box center-all" style="padding-bottom: 1em;">
+                                                    <div class="content center-all">
+                                                        <select name="modeloIndustrial" id="modeloIndustrial" required>
+                                                            <option value="Modelo1">Modelo 1</option>
+                                                            <option value="Modelo1">Modelo 1</option>
+                                                            <option value="Modelo1">Modelo 1</option>
+                                                            <option value="Modelo1">Modelo 1</option>
+                                                        </select>
+                                                        <!-- <label>Contraseña*</label> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-5" style="padding-left: 0;">
+                                                <div style="display: flex; padding-top: 0.4em;">
+                                                    <p class="parr_small gray no-margins" style="padding-right: 0.3em;">Duración: </p>
+                                                    <p class="parr_small light-gray no-margins">Predefinido</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div style="display: flex; padding-bottom: 1em;">
+                                                    <p class="parr_small gray no-margins" style="padding-right: 0.3em;">Costo: </p>
+                                                    <p class="parr_small light-gray no-margins">calcular</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-5">
+                                                <div class="user-box center-all" style="padding-bottom: 1em;">
+                                                    <div class="content center-all">
+                                                        <input class="no-border" type="text" name="nombreIndustrial" id="nombreIndustrial"  maxlength="60" placeholder="Nombre" required/>
+                                                        <!-- <label>Email*</label> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-7">
+                                                <div class="user-box center-all" style="padding-bottom: 1em;">
+                                                    <div class="content center-all">
+                                                        <input type="text" name="apellidoIndustrial" id="apellidoIndustrial"  maxlength="24" placeholder="Apellido" required/>
+                                                        <!-- <label>Contraseña*</label> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-7">
+                                                <div class="user-box center-all" style="padding-bottom: 1em;">
+                                                    <div class="content center-all">
+                                                        <input class="no-border" type="tel" name="numeroIndustrial" id="numeroIndustrial"  maxlength="12" minlength="10" placeholder="Número" required/>
+                                                        <!-- <label>Email*</label> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-5">
+                                                <div class="user-box center-all" style="padding-bottom: 1em;">
+                                                    <div class="content center-all">
+                                                        <input type="email" name="correoIndustrial" id="correoIndustrial"  maxlength="30" placeholder="Correo" required/>
+                                                        <!-- <label>Contraseña*</label> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </form>
+                            </div>
+            
+                            <button class="btn_black" id="btn_info_aereo" onclick="showFormAereo()">Más info</button>
+                            <button class="btn_black hidden" id="btn_solicitar_aereo" form="formIndustrial">
+                                Solicitar  X R I D E
+                            </button>
+    
+    
+                        </div>
+                        
         
-                        <button class="btn_black" id="btn_info_aereo" onclick="showFormAereo()">Más info</button>
-                        <button class="btn_black hidden" id="btn_solicitar_aereo" form="formIndustrial">
-                            Solicitar  X R I D E
-                        </button>
-
-
+                        
                     </div>
                     
     
-                    
                 </div>
-                
-
             </div>
+
+           
            
         </div>
 

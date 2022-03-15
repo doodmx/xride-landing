@@ -6,6 +6,19 @@ body{
     overflow-x: hidden;/* padding-top: 2em; */
 }
 
+.bgd-white{
+    background-color: #fff!important;
+}
+.bgd-lightgray{
+    background-color: #DBDBDB!important;
+}
+.bgd-gray{
+    background-color: #A8A8A8!important;
+}
+.bgd-darkgray{
+    background-color: #6F6F6F!important;
+}
+
 .btn_black{
     border: 1px solid #fff;
     background-color: #000;
@@ -21,8 +34,8 @@ body{
     border: none;
     background: transparent;
     position: absolute;
-    top: 70%;
-    left: 3%;
+    top: 65%;
+    left: 5%;
 }
 
 .btn_mostrar{
@@ -68,6 +81,7 @@ body{
     /* background: #FFFFFF 0% 0% no-repeat padding-box; */
     align-self: flex-end;
     min-height: 100vh;
+    height: 106.7vh;
     max-height: -webkit-fill-available;
 }
 
@@ -82,6 +96,14 @@ body{
     background-image: url('Images/Index/semi-truck-wheels-2021-08-26-23-04-30-utc@2x.png');
 }
 
+#col_transporte_lista{
+    transition: all 0.3s linear;
+}
+
+#col_transporte_lista .col_content{
+    padding-top: 3.2em;
+}
+
 .col_index{
     padding: 0;
     background-size: cover;
@@ -89,7 +111,7 @@ body{
 }
 #col_transporte_lista{
     overflow-y: scroll;
-    height: 100vh;
+    height: 106.7vh;
 }
 
 .cover_index{
@@ -128,6 +150,14 @@ body{
         -ms-animation: fadein 2s; /* Internet Explorer */
          -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 2s;
+}
+
+.fadein-quick{
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
 }
 
 .fadeout{
@@ -390,6 +420,11 @@ main{
     margin-left: auto;
     margin-right: auto;
 }
+.model-card{
+    min-height: 286px;
+    width: 100%;
+    border-radius: 0!important;
+}
 .navbar-collapse{
     background-color: #000;
 }
@@ -551,6 +586,16 @@ html.is-animating .transition-diagonal-tb{
     color: #EDF1F9;
 }
 
+/*----------------------MD and smaller---------------------*/
+@media (max-width:992px){
+    #col_transporte_lista{
+        position: absolute;
+        top: 0;
+        left: 8%;
+        max-width: 96%!important;
+    }
+}
+
 /*----------------------Bigger than SM---------------------*/
 @media (min-width:768px){
     .logo_index{
@@ -589,6 +634,13 @@ html.is-animating .transition-diagonal-tb{
     }
     .col_transporte{
         min-width: 375px;
+        height: unset!important;
+    }
+    #col_transporte_lista{
+        position: absolute;
+        top: 0;
+        left: 8%;
+        max-width: 96%!important;
     }
     
     .cover_index{

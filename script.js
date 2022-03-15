@@ -45,10 +45,31 @@ async function hideFormAereo(){
     $('.btn_mostrar').addClass('hidden');
 }
 
+
 async function toggleModelsCatalogue(){
     let colTransporteLista = document.getElementById('col_transporte_lista');
     let btnMostrarCatalogo = document.getElementById('btn_mostrar_catalogo');
-    colTransporteLista.classList.toggle('hidden');
+    // colTransporteLista.classList.toggle('hidden');
+
+    if (colTransporteLista.classList.contains('hidden')){
+        colTransporteLista.classList.remove('hidden');
+        setTimeout(function(){
+            colTransporteLista.classList.remove('visuallyhidden');
+            
+        }, 10);
+        
+    }else{
+        colTransporteLista.classList.add('visuallyhidden');
+        colTransporteLista.addEventListener('transitionend',function(e){
+            colTransporteLista.classList.add('hidden');
+            
+        },{
+            capture: false,
+            once: true,
+            passive: false
+        });
+    }
+
     if (btnMostrarCatalogo.innerHTML=='Mostrar catálogo'){
         btnMostrarCatalogo.innerHTML='Ocultar catálogo';
     }else{
@@ -57,3 +78,35 @@ async function toggleModelsCatalogue(){
 
 
 }
+
+const colTransporteForm = document.getElementById('col_transporte_form');
+const colTransporteLista = document.getElementById('col_transporte_lista');
+const overlay = document.getElementById('overlay');
+
+
+colTransporteForm.addEventListener('click', function handleOutsideClick() {
+    if ($(window).width() <= 768) {
+        let colTransporteLista = document.getElementById('col_transporte_lista');
+        let btnMostrarCatalogo = document.getElementById('btn_mostrar_catalogo');
+        if (!colTransporteLista.classList.contains('hidden')){
+            toggleModelsCatalogue();
+            btnMostrarCatalogo.innerHTML='Mostrar catálogo';
+            console.log('Models toggled on mobile')
+        }
+        
+    }
+});
+
+overlay.addEventListener('click', function handleOutsideClick() {
+    if ($(window).width() <= 992) {
+        let colTransporteLista = document.getElementById('col_transporte_lista');
+        let btnMostrarCatalogo = document.getElementById('btn_mostrar_catalogo');
+        if (!colTransporteLista.classList.contains('hidden')){
+            toggleModelsCatalogue();
+            btnMostrarCatalogo.innerHTML='Mostrar catálogo';
+            console.log('Models toggled on mobile')
+        }
+        
+    }
+});
+
