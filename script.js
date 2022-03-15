@@ -79,6 +79,8 @@ async function toggleModelsCatalogue(){
 
 }
 
+
+//----------------------- Dynamic models list--------------------------
 const colTransporteForm = document.getElementById('col_transporte_form');
 const colTransporteLista = document.getElementById('col_transporte_lista');
 const overlay = document.getElementById('overlay');
@@ -86,7 +88,6 @@ const overlay = document.getElementById('overlay');
 
 colTransporteForm.addEventListener('click', function handleOutsideClick() {
     if ($(window).width() <= 768) {
-        let colTransporteLista = document.getElementById('col_transporte_lista');
         let btnMostrarCatalogo = document.getElementById('btn_mostrar_catalogo');
         if (!colTransporteLista.classList.contains('hidden')){
             toggleModelsCatalogue();
@@ -99,7 +100,6 @@ colTransporteForm.addEventListener('click', function handleOutsideClick() {
 
 overlay.addEventListener('click', function handleOutsideClick() {
     if ($(window).width() <= 992) {
-        let colTransporteLista = document.getElementById('col_transporte_lista');
         let btnMostrarCatalogo = document.getElementById('btn_mostrar_catalogo');
         if (!colTransporteLista.classList.contains('hidden')){
             toggleModelsCatalogue();

@@ -62,6 +62,30 @@ body{
     height: auto;
 }
 
+.center-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-vertically{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#col_contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    align-items: flex-end;
+    align-items: end;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+}
+
 .col_content_transporte{
     max-width: 100%;
     display: flex;
@@ -114,6 +138,10 @@ body{
     height: 106.7vh;
 }
 
+.container_cities_contacto{
+    max-width: 48%;
+}
+
 .cover_index{
     background-image: url('Images/Index/video_Preview\ 2.mp4');
     background-position: center;
@@ -132,12 +160,17 @@ body{
     background-image: url('Images/Transporte_Aereo/shutterstock_163665074@2x.png');
 }
 
+.cover_contacto{
+    background-image: url('Images/Contacto/front-panel-of-luxury-new-car-in-the-automobile-sa-2021-08-30-04-23-04-utc.png');
+    background-color: #000;
+}
+
 .cover_ejecutivo{
     background-image: url('Images/Transporte_Ejecutivo/car-rear-lights-with-glossy-surface-red-backlight-2022-01-03-23-19-47-utc@2x.png');
 }
 
 .cover_industrial{
-    background-image: url('Images/');
+    background-image: url('Images/Transporte_Industrial/shutterstock_1917179249.png');
 }
 
 #descriptionTransporte{
@@ -425,6 +458,9 @@ main{
     width: 100%;
     border-radius: 0!important;
 }
+.nav-link{
+    padding: 0 3.5em 0 3.5em!important;
+}
 .navbar-collapse{
     background-color: #000;
 }
@@ -586,8 +622,28 @@ html.is-animating .transition-diagonal-tb{
     color: #EDF1F9;
 }
 
-/*----------------------MD and smaller---------------------*/
+/*----------------------LG and bigger---------------------*/
+@media (min-width:992px){
+    .navbar{
+        background-color: #000;
+    }
+}
+
+/*----------------------LG and smaller---------------------*/
 @media (max-width:992px){
+    #col_contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        align-items: center;
+        align-items: center;
+        -webkit-align-items: center;
+    }
+    #col_dummy_contacto{
+        display: none;
+    }
     #col_transporte_lista{
         position: absolute;
         top: 0;
@@ -611,7 +667,7 @@ html.is-animating .transition-diagonal-tb{
 
 }
 
-/*----------------------Mobiles---------------------*/
+/*----------------------Mobiles (SM and smaller)---------------------*/
 
 @media (max-width:768px) and (max-height:1024px) {
 
